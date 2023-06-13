@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo</title>
+  <link rel="shortcut icon" href="2855466.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="bingo">
+    <div class="bandeirinhas">
+      <img src="a6c7e6a9d641ccf2d91162adf3f44ff0 1.svg" alt="bandeirinhas">
+    </div>
+  
+    <header>
+      <strong><h1>BINGO JUNINO</h1></strong>
+    </header>
+  
+    <section class="corpo-bingo">
+      <div class="left">
+        <div class="card1">
+          <button id="sortearNumeroBtn" tabindex="1">Sortear Número</button>
+          <h2>Número sorteado:</h2>
+          <div class="areanumero" id="numerosorteado"></div>
+        </div>
+        <span class="icon" id="start" tabindex="2"> <img src="free-microphone-icon-342-thumb.png" alt="microfone"> </span>
+        <p>Clique no microfone e diga <span>"apagar"</span> para resetar o bingo</p>
+      </div>
+  
+      <div class="centro">
+        <div class="cartela">
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero2"><img src="a4caa876898bf4e63527c0cace8f945f 1.svg" alt="fogueira"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+          <div class="numero"></div>
+        </div>
+      </div>
+  
+      <div class="right">
+        <div class="card1">
+          <button id="gerarCartelaBtn" onclick="gerarCartela()" tabindex="3">Gerar Cartela</button>
+          <h2>Último número sorteado:</h2>
+          <div class="areanumero" id="ultimoNumeroSorteado"></div>
+        </div>
+        <button id="resetarBingoBtn" onclick="resetarBingo()" tabindex="4">Resetar Bingo</button>
+        <p>Clique no botão para resetar o bingo</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <script src="https://kit.fontawesome.com/71bf2796c3.js" crossorigin="anonymous"></script>
+</body>
+</html>
