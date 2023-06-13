@@ -104,7 +104,7 @@ function resetarBingo() {
       for (let i = event.resultIndex; i < event.results.length; i++) {
         if (event.results[i].isFinal) {
           const content = event.results[i][0].transcript.trim();
-          palavraacomparar = "apagar";
+          palavraacomparar = "gerar";
           if (content.toUpperCase() === palavraacomparar.toUpperCase()) {
             gerarCartela()
           }
